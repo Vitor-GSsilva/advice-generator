@@ -1,0 +1,65 @@
+body{
+    background-color: var(--background-color);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.aviso{
+    background-color: var(--advice-card-color);
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 450px;
+} 
+
+.aviso .id-aviso{
+    color: var(--advice-dice-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.descricao-aviso{
+    color: var(--text-color);
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+}
+
+.divisor picture img {
+    width: 100%;
+  }
+
+.aviso .att-aviso{
+    background-color: var(--advice-dice-color);
+    transform:translateY(50%) ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+.aviso .att-aviso:hover{
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+@media(min-width: 768px){
+    .advice{
+        padding-inline: 50px;
+        width: 386px;
+    }
+    .advice p{
+        font-size: 21px;
+        padding: 26px;
+    }
+}
